@@ -1,4 +1,3 @@
-<script type="text/javascript">
 const cachorro = {
   nome: 'Punk',
   idade: 5,
@@ -16,23 +15,12 @@ const pessoa = {
   nome: "Vinicius",
   idade: 29,
   falar(palavras) {
-    //console.log(this.name + ' falou: ' + palavras);
     console.log(`${this.nome} falou: ${palavras}`);
   },
-  // latir(vezes = 4, text = "uaua") {
-  //   // cachorro.falar.call(this, vezes);
-  //   cachorro.falar.apply(this, [vezes]);
-  // }
+
 }
 
-// pessoa.latir = cachorro.falar.bind(pessoa);
 pessoa.latir = cachorro.falar.bind(pessoa, 77);
-// pessoa.latir(77, 'yo yo yo');
+
 pessoa.latir();
 
-// console.log(cachorro.idadeCanina());
-// cachorro.falar();
-// pessoa.falar('abc');
-// pessoa.latir(6);
-// cachorro.falar.call(pessoa);	
-</script>

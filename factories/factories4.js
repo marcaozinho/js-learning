@@ -1,4 +1,3 @@
-<script type="text/javascript">
 // //factories simples e puras, sem funções construtoras
 // //criando objeto literal, puro.
 // function makePessoa(nome, idade) {
@@ -51,4 +50,3 @@ cris.envelhecer();
 
 console.log(cris);
 console.log(vinicius);	
-</script>

@@ -1,14 +1,17 @@
-<script type="text/javascript">
+function envelhecer(anos) {
+    this.idade += anos;
+}
+
 function makePessoa(nome, idade) { 
-  let pais = 'Brasil'; 
-  const estado = { nome, idade, falar, envelhecer, getPais, setPais };
+  let pais = 'Brasil';
+  const estado = { nome, idade, falar,  getPais, setPais, envelhecer: localEnvelhecer };
   
   function falar (palavras) {
     console.log(`${estado.nome} falou ${palavras}`);
   }
   
-  function envelhecer(anos = 1) {
-    estado.idade += anos;
+  function localEnvelhecer() {
+    envelhecer.call(estado, 5);
   }
   
   function getPais() {
@@ -26,12 +29,8 @@ function makePessoa(nome, idade) {
 const cris = makePessoa("cris", 25);
 const vinicius = makePessoa("vinicius", 30);
 
-cris.pais = "teste";
-console.log(cris.pais);
-
-console.log(cris.getPais());
+cris.envelhecer();
 cris.envelhecer();
 cris.setPais("Argentina");
 console.log(cris.getPais());
 console.log(cris);
-</script>

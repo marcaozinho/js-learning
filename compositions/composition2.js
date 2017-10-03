@@ -1,4 +1,3 @@
-<script type="text/javascript">
 const pessoa = {
 	andar(passos = 2) {
 		console.log(`${this.nome} andou ${passos} passos`);
@@ -10,12 +9,24 @@ const vinicius = Object.create(pessoa, {
 		value: 'vinicius',
 		writable: true,
 	},
+	sobrenome: {
+		value: 'leite',
+		writable: true,
+	},
+	nome_completo: {
+		get() {
+			return `${this.nome} ${this.sobrenome}`;
+		},
+		set(valor) {
+			this.nome = valor;
+		}
+	},
 	idade: {
 		value: 25,
 	},
 });
 
-vinicius.nome = "marcus";
+vinicius.nome_completo = "marcus";
+
 console.log(vinicius);
 vinicius.andar(33);
-</script>

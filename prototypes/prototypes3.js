@@ -1,4 +1,3 @@
-<script type="text/javascript">
 function Pessoa(nome, idade) {
   this.nome = nome;
   this.idade = idade || 1;
@@ -18,7 +17,7 @@ function Homem(nome, idade) {
   this.sexo = 'masculino';
 }
 
-Homem.prototype = Pessoa.prototype;
+Homem.prototype = new Pessoa();  
 Homem.prototype.caminhar = function(passos) {
   console.log(this.nome + ' caminhou ' + passos + ' passos');
 }
@@ -27,11 +26,9 @@ Homem.prototype.caminhar = function(passos) {
 const vinicius = new Homem('Vinicius', 25);
 const cris = new Pessoa('Cris', 25);
 
+
 console.log(vinicius);
-vinicius.envelhecer();
+
 vinicius.caminhar(33);
 
-console.log(cris);
 cris.envelhecer();
-cris.caminhar(32);
-</script>

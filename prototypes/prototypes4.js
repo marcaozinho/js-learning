@@ -1,4 +1,3 @@
-<script type="text/javascript">
 function Pessoa(nome, idade) {
   this.nome = nome;
   this.idade = idade || 1;
@@ -42,5 +41,3 @@ console.log(vinicius.sexo);
 
 vinicius.caminhar(33);
 cris.caminhar(33);
-
-</script>

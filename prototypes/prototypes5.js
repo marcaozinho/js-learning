@@ -18,7 +18,7 @@ function Homem(nome, idade) {
   this.sexo = 'masculino';
 }
 
-Homem.prototype = new Pessoa();  
+herdar(Homem, Pessoa);
 Homem.prototype.caminhar = function(passos) {
   console.log(this.nome + ' caminhou ' + passos + ' passos');
 }
@@ -27,10 +27,16 @@ Homem.prototype.caminhar = function(passos) {
 const vinicius = new Homem('Vinicius', 25);
 const cris = new Pessoa('Cris', 25);
 
-
-console.log(vinicius);
-
-vinicius.caminhar(33);
-
+console.log(vinicius.idade);
+vinicius.envelhecer();
+delete vinicius.idade;
+console.log(vinicius.idade);
+vinicius.envelhecer();
 cris.envelhecer();
-</script>
+
+//Hoisting
+function herdar(FILHA, MAE) {
+  function P() { };
+  P.prototype  = MAE.prototype;
+  FILHA.prototype = new P();
+}

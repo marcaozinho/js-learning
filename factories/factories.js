@@ -1,4 +1,3 @@
-<script type="text/javascript">
 class Pessoa {
   constructor(nome, idade) {
     this.nome = nome;
@@ -12,4 +11,3 @@ class Pessoa {
 
 const cris = new Pessoa('Cris', 25);
 cris.falar('opa');	
-</script>

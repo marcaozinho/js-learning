@@ -1,4 +1,3 @@
-<script type="text/javascript">
 var CONFIG = {
 	host: "https://google.com",
 };
@@ -15,4 +14,3 @@ console.log(nome);
 init();
 
 console.log(nome);
-</script>

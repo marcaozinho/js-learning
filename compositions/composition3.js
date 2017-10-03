@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 const pessoa = {
 	andar(passos = 2) {
 		console.log(`${this.nome} andou ${passos} passos`);
@@ -23,4 +21,3 @@ const vinicius = createPessoa("Vinicius", 30);
 
 console.log(vinicius);
 vinicius.andar(33);
-</script>

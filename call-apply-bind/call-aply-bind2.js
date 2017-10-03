@@ -1,4 +1,3 @@
-<script type="text/javascript">
 function add(a, b) {
   return a + b;
 }
@@ -25,4 +24,3 @@ const homem = new Homem("Nome homem");
 
 homem.falar = pessoa.falar.bind(homem);
 homem.falar("teste");	
-</script>

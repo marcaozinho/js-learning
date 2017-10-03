@@ -1,4 +1,3 @@
-<script type="text/javascript">
 // const caminhante = {
 // 	andar(passos = 2) {
 // 		console.log(`${this.nome} andou ${passos} passos`); //esperam this.nome
@@ -44,5 +43,3 @@ const conta = Object.assign({}, emissorDeEventos);
 
 conta.emitir('ola');
 conta.log('oi');
-
-</script>

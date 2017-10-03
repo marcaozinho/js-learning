@@ -1,4 +1,3 @@
-<script type="text/javascript">
 const vinicius = {name: "vinicius"};
 const pessoa = JSON.parse(JSON.stringify(vinicius));
 const amanda = "amanda";
@@ -17,4 +16,3 @@ sayMyName(pessoa);
 console.log(amanda);
 console.log(vinicius);
 console.log(pessoa);	
-</script>
